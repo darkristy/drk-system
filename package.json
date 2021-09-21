@@ -1,0 +1,67 @@
+{
+  "name": "drk-system",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+	"files": [
+    "dist"
+  ],
+  "types": "dist/src/index.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "ds:build": "rollup -c"
+  },
+  "dependencies": {
+    "@stitches/react": "^1.2.0",
+		"leading-trim": "^1.0.1",
+    "lodash.merge": "^4.6.2"
+  },
+	"peerDependencies": {
+		"react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/preset-react": "^7.14.5",
+    "@babel/preset-typescript": "^7.15.0",
+    "@rollup/plugin-node-resolve": "^13.0.4",
+    "@types/lodash.merge": "^4.6.6",
+    "@types/react": "^17.0.22",
+    "@types/react-dom": "^17.0.9",
+    "@typescript-eslint/eslint-plugin": "^4.31.2",
+    "@typescript-eslint/parser": "^4.31.2",
+    "babel-eslint": "^10.0.3",
+    "cz-conventional-changelog": "3.3.0",
+    "eslint": "7.32.0",
+    "eslint-config-airbnb": "^18.0.0",
+    "eslint-config-darkristy": "0.2.24",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-import-resolver-typescript": "^2.5.0",
+    "eslint-plugin-flowtype": "^6.1.0",
+    "eslint-plugin-html": "^6.0.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-monorepo": "^0.3.2",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.14.2",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "esprima": "^4.0.1",
+    "next": "^11.1.2",
+    "prettier": "^2.4.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "rollup": "^2.56.3",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "typescript": "^4.4.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
